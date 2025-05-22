@@ -160,7 +160,7 @@
             <input
               type="file"
               id="imgupload"
-              style="display: none"
+              style="display: block"
               accept="image/*"
               onchange="openFile(event)"
             />
@@ -172,6 +172,11 @@
               />
             </div>
           </div>
+        </div>
+        <div class="part flex" style="gap:10px;justify-content: flex-start;">
+          <p class="title">Breath in/out time: </p>
+          <input id="breath-in" type="number" style="display: block" placeholder="4"></input>
+          <button onclick="changeTime()" style="padding-left:10px;padding-right:10px;padding-top:2px;padding-bottom:2px;">Set</button>
         </div>
         <div class="part">
           <p class="title">Made by Eduardo Migueis</p>

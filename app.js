@@ -229,3 +229,9 @@ document.getElementById("toggly").addEventListener("click", function () {
     document.getElementById("poses").style.display = "none";
   }
 });
+var changeTime=function(){
+  let elements=document.getElementsByClassName("circle");
+  for(let element=0;element<elements.length;element++){
+    elements[element].style="animation:circle-"+(element+1)+" "+document.getElementById("breath-in").value+"s ease alternate infinite";
+  } 
+}
